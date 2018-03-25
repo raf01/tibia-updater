@@ -106,7 +106,7 @@ sed -i '/tibia/d' ~/.bashrc
 
 printf "Deleted all occurences of tibia shortcuts in ~/.bashrc...\n"
 printf "Appending new shortcuts...\n"
-printf "\nalias tibia=~/games/"$newestVersion"/start-tibia.sh\n"
+printf "\nalias tibia="$pathTibia$newestVersion"/start-tibia.sh\n"
 printf "alias tibia="$pathTibia$newestVersion"/start-tibia.sh\n" >> ~/.bashrc
 printf "alias tibiaupdater="$(pwd)"/update-tibia.sh"
 printf "alias tibiaupdater="$(pwd)"/update-tibia.sh" >> ~/.bashrc
